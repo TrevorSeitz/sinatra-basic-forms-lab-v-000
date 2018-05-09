@@ -13,6 +13,10 @@ class App < Sinatra::Base
     erb :create_puppy
   end
 
+  get '/NEW' do
+    erb :create_puppy
+  end
+
   # get '/create_puppy.erb' do
   # "Hello World"
   # end
