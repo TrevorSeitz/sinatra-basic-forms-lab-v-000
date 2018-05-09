@@ -9,8 +9,12 @@ class App < Sinatra::Base
     erb :list_puppy
   end
 
-  get '/create_puppy' do
+  get '/create_puppy.erb' do
     erb :create_puppy
+  end
+
+  get '/create_puppy.erb' do
+  "Hello World"
   end
 
 end
