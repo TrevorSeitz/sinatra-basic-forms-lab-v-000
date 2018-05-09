@@ -6,9 +6,8 @@ class App < Sinatra::Base
   end
 
   post '/display' do
-    pup = Puppy.new
-@english = params[:user_phrase]
-@latinized_text = pl.piglatinize(@english)
+    pup = Puppy.new(name, breed, age)
+# @latinized_text = pl.piglatinize(@english)
     erb :display_puppy
   end
 
