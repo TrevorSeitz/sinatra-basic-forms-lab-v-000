@@ -6,11 +6,11 @@ class App < Sinatra::Base
   end
 
   post '/display' do
-    binding.pry
     erb :display_puppy
   end
 
   get '/create_puppy.erb' do
+    binding.pry
     erb :create_puppy
   end
 
