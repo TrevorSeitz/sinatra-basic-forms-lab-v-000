@@ -1,12 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <h2>Puppy name: <%=@name %></h2>
+      <h2>Puppy breed: <%=@breed %></h2>
+      <h2>Puppy age: <%=@age %></h2>
 
-<h2>Puppy name: <%=@name %></h2>
-<h2>Puppy breed: <%=@breed %></h2>
-<h2>Puppy age: <%=@age %></h2>
 
-<form method="POST" action="/new">
-  <p>Add Another Puppy</p>
-  <p>Puppy Name: <input type="text" id="name" name="name"></p>
-  <p>Puppy Breed: <input type="text" id="breed" name="breed"></p>
-  <p>Puppy Age: <input type="text" id="age" name="age"></p>
-  <input type="submit" id="submit" value="submit">
-</form>
+      <form method="POST" action="/new">
+        <p>Add Another Puppy</p>
+        <p>Puppy Name: <input type="text" id="name" name="name"></p>
+        <p>Puppy Breed: <input type="text" id="breed" name="breed"></p>
+        <p>Puppy Age: <input type="text" id="age" name="age"></p>
+        <input type="submit" id="submit" value="submit">
+      </form>
+    </body>
+  </head>
+</html>
